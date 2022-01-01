@@ -2,6 +2,7 @@
 Demonstrates font not found with robolectric `4.7.3` while targetting sdk 31. 
 
 While accessing font using `ResourcesCompat.getFont(context, R.font.font_name)` tests fail with `Resources$NotFoundException` error. 
+
 **But if you annotate the test with `@Config(sdk = [30])` it passes.**
 
 # How to run
