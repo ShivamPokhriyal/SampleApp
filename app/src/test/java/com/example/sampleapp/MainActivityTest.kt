@@ -7,9 +7,11 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.annotation.LooperMode
 import com.google.common.truth.Truth.assertThat
+import org.robolectric.annotation.Config
 
 @LooperMode(LooperMode.Mode.PAUSED)
 @RunWith(AndroidJUnit4::class)
+//@Config(sdk = [30]) // Uncomment this line to pass the tests
 class MainActivityTest {
     @Test
     fun testTextView() {
